@@ -1,0 +1,77 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/creon/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/creon/Projects/E02-001_NodeJS_App_001/data/package.json
+verbose loadDefaults Tutorial-app-001@0.0.1
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/home/creon/Projects/E02-001_NodeJS_App_001/data',
+verbose where, deps   [ 'express', 'mongoose', 'jade' ] ]
+verbose from cache /home/creon/Projects/E02-001_NodeJS_App_001/data/package.json
+info preinstall Tutorial-app-001@0.0.1
+verbose from cache /home/creon/Projects/E02-001_NodeJS_App_001/data/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'express@*', null ]
+silly cache add: name, spec, args [ undefined, 'express@*', [ 'express@*', null ] ]
+verbose parsed url { pathname: 'express@*', path: 'express@*', href: 'express@*' }
+silly cache add: name, spec, args [ 'express', '*', [ 'express', '*' ] ]
+verbose parsed url { pathname: '*', path: '*', href: '*' }
+verbose addNamed [ 'express', '*' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'express', '', false ]
+verbose cache add [ 'mongoose@*', null ]
+silly cache add: name, spec, args [ undefined, 'mongoose@*', [ 'mongoose@*', null ] ]
+verbose parsed url { pathname: 'mongoose@*',
+verbose parsed url   path: 'mongoose@*',
+verbose parsed url   href: 'mongoose@*' }
+silly cache add: name, spec, args [ 'mongoose', '*', [ 'mongoose', '*' ] ]
+verbose parsed url { pathname: '*', path: '*', href: '*' }
+verbose addNamed [ 'mongoose', '*' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'mongoose', '', false ]
+verbose raw, before any munging express
+verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+verbose url resolved https://registry.npmjs.org/express
+http GET https://registry.npmjs.org/express
+verbose raw, before any munging mongoose
+verbose url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+verbose url resolved https://registry.npmjs.org/mongoose
+http GET https://registry.npmjs.org/mongoose
+verbose cache add [ 'jade@*', null ]
+silly cache add: name, spec, args [ undefined, 'jade@*', [ 'jade@*', null ] ]
+verbose parsed url { pathname: 'jade@*', path: 'jade@*', href: 'jade@*' }
+silly cache add: name, spec, args [ 'jade', '*', [ 'jade', '*' ] ]
+verbose parsed url { pathname: '*', path: '*', href: '*' }
+verbose addNamed [ 'jade', '*' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'jade', '', false ]
+verbose raw, before any munging jade
+verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+verbose url resolved https://registry.npmjs.org/jade
+http GET https://registry.npmjs.org/jade
+ERR! Error: failed to fetch from registry: express
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at HTTPParser.onIncoming (http.js:1261:11)
+ERR!     at HTTPParser.onHeadersComplete (http.js:102:31)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/creon/Projects/E02-001_NodeJS_App_001/data/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.13.0-63-generic
+ERR! command "node" "/usr/bin/npm" "install"
+ERR! cwd /home/creon/Projects/E02-001_NodeJS_App_001/data
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: express
+verbose exit [ 1, true ]
